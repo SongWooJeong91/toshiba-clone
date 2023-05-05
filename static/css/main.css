@@ -14,11 +14,11 @@ header {
 	background-color: #ffffff;
 	margin: 0 auto;
 	width: 1200px;
+	height: 80px;
 }
 
 .header-contents {
 	display: flex;
-	justify-content: space-between;
 }
 
 .logo {
@@ -28,7 +28,6 @@ header {
 .main-menu {
 	font-size: 17px;
 	display: flex;
-	justify-content: space-between;
 }
 .main-menu > li {
 	margin-left: 90px;
@@ -36,6 +35,13 @@ header {
 .main-menu > li > a {
 	padding: 30px 0 25px 0;
 	display: block;
+	font-weight: bold;
+}
+.sub_menu_wrap {
+	display: flex;
+}
+.sub_menu_wrap ul {
+	margin-left: 90px;
 }
 .sub-menu {
 	padding: 15px 0 0;
@@ -48,6 +54,8 @@ header {
 }
 .world {
 	margin-top: 30px;
+	flex-grow: 1;
+	text-align: right;
 }
 .world > a {
 	font-size: 12px;
@@ -57,9 +65,11 @@ header {
 	margin-left: 15px;
 	padding-left: 10px;
 }
-
 .container {
+	/* width: 1200px; */
+	margin: 0 0 70px 0;
 }
+
 .slide_wrap {
 	width: 100%;
 	height: 400px;
@@ -90,14 +100,75 @@ header {
 	margin: 0 auto;
 }
 .introduce {
-	margin: 70px 0;
-}
-.introduce-left {
-	width: 397px;
 	height: 418px;
+	margin: 70px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.introduce_left {
+	width: 397px;
 	background: no-repeat
-		url('http://www.toshiba.kr/front/images/main/main_menu1_m.jpg');
-	background-size: cover;
+		url('http://www.toshiba.kr/front/images/main/main_menu1.jpg');
+	background-size: 100% 100%;
+	margin-right: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.introduce_left strong,
+.introduce_right div strong {
+	font-size: 17px;
+	font-weight: 600;
+	color: #ffffff;
+}
+.introduce_left p,
+.introduce_right div p {
+	font-size: 14px;
+	color: #ffffff;
+	margin: 5px 0 0;
+}
+
+.introduce_right {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	box-sizing: border-box;
+}
+.introduce_right > a {
+	width: calc(50% - 2px);
+	height: calc(50% - 2px);
+	box-sizing: border-box;
+}
+.introduce_right > a:first-child {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/main_menu2.jpg');
+	background-size: 100% 100%;
+}
+.introduce_right > a:nth-child(2) {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/main_menu3.jpg');
+	background-size: 100% 100%;
+}
+.introduce_right > a:nth-child(3) {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/main_menu4.jpg');
+	background-size: 100% 100%;
+}
+.introduce_right > a:last-child {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/main_menu5.jpg');
+	background-size: 100% 100%;
+}
+.introduce_right_bannerbox {
+	position: relative;
+}
+.introduce_right_textbox {
+	position: absolute;
+	left: 27px;
+	bottom: 30px;
 }
 .info_banner_wrap {
 	background-color: #fdf2ec;
@@ -114,7 +185,7 @@ header {
 	justify-content: space-between;
 }
 .info_banner ul li {
-	width: 32.5%;
+	width: calc(33.333% - 4px);
 }
 .info_banner ul li:first-child {
 	background: url('http://www.toshiba.kr/front/images/main/bg_main_menu1.jpg');
@@ -184,25 +255,23 @@ header {
 
 .news_contens > ul > li {
 	width: 280px;
-	height: 180px;
+	/* height: 180px; */
 }
 
 .news_contens > ul > li > a {
 	display: block;
-	width: 280px;
 }
 
 .news_contens > ul > li > a > img {
 	width: 100%;
 	height: 180px;
+	object-fit: cover;
 }
 
 .news_textbox {
 	border: 1px solid #ebe8e8;
 	padding: 15px 15px 20px;
 	font-size: 15px;
-}
-.news_textbox p {
 }
 .news_textbox span {
 	font-size: 15px;
