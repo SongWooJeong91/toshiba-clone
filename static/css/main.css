@@ -1,0 +1,211 @@
+/* 슬라이드 배경화면 */
+/* http://www.toshiba.kr/front/images/main/bg_man_visual.jpg */
+.nav-background {
+	display: none;
+	position: absolute;
+	top: 0px;
+	z-index: -10;
+	width: 100%;
+	height: 100px;
+	/* background-color: red; */
+	border-top: #d9d9d9;
+}
+header {
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.header-contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-top: 30px;
+}
+
+.main-menu {
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+}
+.main-menu > li {
+	margin-left: 90px;
+}
+.main-menu > li > a {
+	padding: 30px 0 25px 0;
+	display: block;
+}
+.sub-menu {
+	padding: 15px 0 0;
+}
+.sub-menu > li > a {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 1.4;
+	font-size: 15px;
+}
+.world {
+	margin-top: 30px;
+}
+.world > a {
+	font-size: 12px;
+	background: url('http://www.toshiba.kr/front/images/common/bg_top_arrow.png')
+		no-repeat;
+	background-position: left center;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+
+.container {
+}
+.slide_wrap {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	/* overflow: hidden; */
+	background: url('http://www.toshiba.kr/front/images/main/bg_man_visual.jpg');
+}
+.main_slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	width: 400%;
+}
+.main_slide li {
+	margin: 0 auto;
+}
+.main_slide li a {
+	display: block;
+	margin: 0 auto;
+	width: 1200px;
+}
+.main_slide li a img {
+	width: 1200px;
+}
+.introduce-wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+.introduce {
+	margin: 70px 0;
+}
+.introduce-left {
+	width: 397px;
+	height: 418px;
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/main_menu1_m.jpg');
+	background-size: cover;
+}
+.info_banner_wrap {
+	background-color: #fdf2ec;
+	margin-top: 75px;
+}
+.info_banner {
+	width: 1200px;
+	margin: 0 auto;
+
+	padding: 55px 0;
+}
+.info_banner ul {
+	display: flex;
+	justify-content: space-between;
+}
+.info_banner ul li {
+	width: 32.5%;
+}
+.info_banner ul li:first-child {
+	background: url('http://www.toshiba.kr/front/images/main/bg_main_menu1.jpg');
+}
+.info_banner ul li:nth-child(2) {
+	background: url('http://www.toshiba.kr/front/images/main/bg_main_menu2.jpg');
+}
+.info_banner ul li:last-child {
+	background: url('http://www.toshiba.kr/front/images/main/bg_main_menu3.jpg');
+}
+.info_banner ul li a {
+	height: 110px;
+	padding: 0 0 0 125px;
+	text-align: center;
+}
+.info_banner ul li a:not(.info_last_banner) {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.info_banner ul li:first-child a {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/icon_main_menu1.png');
+	background-size: 76px auto;
+	background-position: 35px center;
+}
+.info_banner ul li:nth-child(2) a {
+	background: no-repeat
+		url('http://www.toshiba.kr/front/images/main/icon_main_menu2.png');
+	background-size: 76px auto;
+	background-position: 35px center;
+}
+.info_banner_textbox span {
+	font-size: 13px;
+	opacity: 0.5;
+	color: #ffffff;
+}
+.info_banner_textbox p {
+	font-size: 16px;
+	color: #ffffff;
+	margin: 5px 0 0;
+}
+.news_wrap {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+.news_wrap h2 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+}
+.news_subtitle {
+	font-size: 15px;
+	color: #888888;
+	text-align: center;
+	letter-spacing: 1.5;
+}
+.news_contens {
+	margin: 65px 0 0;
+}
+.news_contens > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news_contens > ul > li {
+	width: 280px;
+	height: 180px;
+}
+
+.news_contens > ul > li > a {
+	display: block;
+	width: 280px;
+}
+
+.news_contens > ul > li > a > img {
+	width: 100%;
+	height: 180px;
+}
+
+.news_textbox {
+	border: 1px solid #ebe8e8;
+	padding: 15px 15px 20px;
+	font-size: 15px;
+}
+.news_textbox p {
+}
+.news_textbox span {
+	font-size: 15px;
+	margin: 5px 0 0;
+	color: #888888;
+}
