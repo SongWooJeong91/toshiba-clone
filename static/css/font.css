@@ -1,1 +1,4 @@
-
+@font-face {
+	font-family: 'notokr';
+	src: url('../font/NotoSansKR-Light.otf') format('truetype');
+}

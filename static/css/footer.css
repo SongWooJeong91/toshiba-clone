@@ -8,15 +8,19 @@ footer {
 	justify-content: space-between;
 	padding: 32px 0;
 }
-.footer_info_box p,
-.footer_info_box a {
+.footer_info_box {
+	letter-spacing: 0;
+}
+.footer_info_box span,
+.sitemap {
 	font-size: 13px;
 	color: #98999a;
 }
-.footer_info_box p {
-	display: inline;
+.copyright br {
+	display: none;
 }
-.footer_info_line {
+.sitemap::before {
+	content: '';
 	display: inline-block;
 	width: 1px;
 	height: 12px;
@@ -39,19 +43,84 @@ footer {
 	color: #98999a;
 }
 
-#family_site {
-	width: 132px;
-	height: 30px;
+.option_val {
+	display: inline-block;
+	width: 130px;
+	margin-left: 3px;
+	background: #131415;
+	border: none;
+	position: relative;
+}
+.option_tit {
 	font-size: 12px;
-	margin: 0 0 0 3px;
-	border: 0;
-	border-radius: 0;
-	background-color: #131415;
+	height: 30px;
+	padding-left: 10px;
 	color: #98999a;
-	padding: 0 0 0 10px;
-	outline: none;
-	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 30px;
+}
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+}
+.select_btn {
+	width: 28px;
+	height: 28px;
+	background: url('http://www.toshiba.kr/front/images/common/ico_select_family.gif')
+		no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#family_site {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
 }
 #family_site option {
 	background-color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+	.footer_wrap {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0 27px;
+	}
+	.footer_info_box {
+		text-align: center;
+	}
+	.footer_info_box span,
+	.footer_info_box a {
+		font-size: 11px;
+		color: #98999a;
+	}
+	.copyright br {
+		display: block;
+	}
+	.layer_box {
+		display: flex;
+		margin-top: 15px;
+	}
+
+	.personal_information_btn {
+		font-size: 13px;
+		width: 125px;
+		height: 30px;
+		background-color: #131415;
+		text-align: center;
+		line-height: 30px;
+	}
+	.personal_information_btn a {
+		color: #98999a;
+	}
 }

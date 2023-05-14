@@ -6,126 +6,189 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>도시바 한국 TOSHIBA KOREA</title>
 		<link rel="stylesheet" href="./static/css/reset.css" />
-		<link rel="stylesheet" href="./static/css/common.css" />
 		<link rel="stylesheet" href="./static/css/main.css" />
 		<link rel="stylesheet" href="./static/css/footer.css" />
+		<link rel="stylesheet" href="./static/css/font.css" />
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
 	</head>
 	<body>
 		<div class="wrap">
+			<div class="pc_menu_bg"></div>
 			<header>
 				<div class="header-contents">
 					<h1 class="logo">
-						<a href="http://www.toshiba.kr/"
-							><img
-								src="http://www.toshiba.kr/front/images/common/logo.gif"
-								alt="TOSHIBA KOREA"
-						/></a>
+						<a href="http://www.toshiba.kr/"> </a>
 					</h1>
+					<a href="#" class="menu_btn"></a>
 					<nav>
 						<ul class="main_menu">
 							<li>
-								<a href="">제품정보</a>
+								<a href="#" class="menu_txt">제품정보</a>
 								<div class="sub_menu_wrap">
-									<ul class="sub_menu">
-										<li><a href="">전체 제품보기</a></li>
+									<ul>
+										<li><a href="#">전체 제품보기</a></li>
 									</ul>
 								</div>
 							</li>
 							<li>
-								<a href="">도시바 소식</a>
+								<a href="#" class="menu_txt">도시바 소식</a>
 								<div class="sub_menu_wrap">
-									<ul class="sub-menu">
-										<li><a href="">도시바 소식</a></li>
+									<ul>
+										<li><a href="#">도시바 소식</a></li>
 									</ul>
 								</div>
 							</li>
 							<li>
-								<a href="">지속경영</a>
+								<a href="#" class="menu_txt">지속경영</a>
 								<div class="sub_menu_wrap">
-									<ul class="sub-menu">
-										<li><a href="">CSR경영</a></li>
-										<li><a href="">환경경영</a></li>
-										<li><a href="">사회공헌 활동</a></li>
+									<ul>
+										<li><a href="#">CSR경영</a></li>
+										<li><a href="#">환경경영</a></li>
+										<li><a href="#">사회공헌 활동</a></li>
 									</ul>
 								</div>
 							</li>
 							<li>
-								<a href="">회사소개</a>
+								<a href="#" class="menu_txt">회사소개</a>
 								<div class="sub_menu_wrap">
-									<ul class="sub-menu">
-										<li><a href="">새로운 도시바의 모습</a></li>
-										<li><a href="">기업 개요</a></li>
-										<li><a href="">이념체계</a></li>
-										<li><a href="">역사/연혁</a></li>
-										<li><a href="">사업영역</a></li>
-										<li><a href="">인재상</a></li>
-										<li><a href="">국내법인</a></li>
+									<ul>
+										<li><a href="#">새로운 도시바의 모습</a></li>
+										<li><a href="#">기업 개요</a></li>
+										<li><a href="#">이념체계</a></li>
+										<li><a href="#">역사/연혁</a></li>
+										<li><a href="#">사업영역</a></li>
+										<li><a href="#">인재상</a></li>
+										<li><a href="#">국내법인</a></li>
 									</ul>
 								</div>
 							</li>
 						</ul>
+						<div class="m_menu_bg"></div>
+						<div class="m_menu_wrap">
+							<div class="m_menu_top">
+								<a href="#" class="m_menu_logo"></a>
+								<a href="#" class="m_menu_close">
+									<span class="close_btn_left"></span>
+									<span class="close_btn_right"></span>
+								</a>
+							</div>
+							<ul class="m_menu">
+								<li>
+									<a href="#">제품정보<span class="menu_allow"></span></a>
+
+									<div>
+										<ul class="m_sub_menu">
+											<li><a href="#">전체 제품보기</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">도시바 소식<span class="menu_allow"></span></a>
+									<ul class="m_sub_menu">
+										<li><a href="#">도시바 소식</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">지속경영<span class="menu_allow"></span></a>
+									<ul class="m_sub_menu">
+										<li><a href="#">CSR경영</a></li>
+										<li><a href="#">환경경영</a></li>
+										<li><a href="#">사회공헌 활동</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">회사소개<span class="menu_allow"></span></a>
+									<ul class="m_sub_menu">
+										<li><a href="#">새로운 도시바의 모습</a></li>
+										<li><a href="#">기업 개요</a></li>
+										<li><a href="#">이념체계</a></li>
+										<li><a href="#">역사/연혁</a></li>
+										<li><a href="#">사업영역</a></li>
+										<li><a href="#">인재상</a></li>
+										<li><a href="#">국내법인</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 					</nav>
 
 					<div class="world">
-						<a href="http://www.toshiba.co.jp/worldwide/" target="_blank"
-							><span>Toshiba Worldwide</span></a
-						><a href="http://www.asia.toshiba.com/" target="_blank"
-							><span>Toshiba Asia Pacific</span></a
-						>
+						<a href="#" target="_blank"><span>Toshiba Worldwide</span></a
+						><a href="#" target="_blank"><span>Toshiba Asia Pacific</span></a>
 					</div>
 				</div>
 				<div class="nav_background"></div>
 			</header>
 			<div class="container">
 				<div class="slide_wrap">
-					<ul class="main_slide">
-						<li>
-							<a href=""
-								><img
-									src="http://www.toshiba.kr/front/images/main/man_visual1_p.png"
-									alt=""
-							/></a>
-						</li>
-						<li>
-							<a href=""
-								><img
-									src="http://www.toshiba.kr/front/images/main/man_visual2_p.png"
-									alt=""
-							/></a>
-						</li>
-						<li>
-							<a href=""
-								><img
-									src="http://www.toshiba.kr/front/images/main/man_visual3_p.png"
-									alt=""
-							/></a>
-						</li>
-						<li>
-							<a href=""
-								><img
-									src="http://www.toshiba.kr/front/images/main/man_visual4_p.png"
-									alt=""
-							/></a>
-						</li>
-					</ul>
-					<!-- 갯수에 맞춰서 만들게 해야되는데 자스로 -->
-					<div class="slide_btn_wrap">
-						<button class="slide_btn_item slide_btn_red"></button>
-						<button class="slide_btn_item"></button>
-						<button class="slide_btn_item"></button>
-						<button class="slide_btn_item"></button>
-						<!-- <span class="slide_btn_item">1</span>
-						<span class="slide_btn_item">2</span>
-						<span class="slide_btn_item">3</span>
-						<span class="slide_btn_item">4</span> -->
+					<div>
+						<a href="#"
+							><img
+								src="http://www.toshiba.kr/front/images/main/man_visual1_p.png"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a href="#"
+							><img
+								src="http://www.toshiba.kr/front/images/main/man_visual2_p.png"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a href="#"
+							><img
+								src="http://www.toshiba.kr/front/images/main/man_visual3_p.png"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a href="#"
+							><img
+								src="http://www.toshiba.kr/front/images/main/man_visual4_p.png"
+								alt=""
+						/></a>
+					</div>
+				</div>
+				<div class="m_slide_wrap">
+					<div>
+						<img
+							src="http://www.toshiba.kr/front/images/main/man_visual1_m.jpg"
+							alt="외장하드 & 스토리지(개인용)"
+						/>
+					</div>
+					<div>
+						<img
+							src="http://www.toshiba.kr/front/images/main/man_visual2_m.jpg"
+							alt="POS & 프린팅솔루션"
+						/>
+					</div>
+					<div>
+						<img
+							src="http://www.toshiba.kr/front/images/main/man_visual3_m.jpg"
+							alt="반도체 & 스토리지(기업용)"
+						/>
+					</div>
+					<div>
+						<img
+							src="http://www.toshiba.kr/front/images/main/man_visual4_m.jpg"
+							alt="전체 제품정보"
+						/>
 					</div>
 				</div>
 				<div class="introduce-wrap">
 					<div class="introduce">
-						<a
-							href="http://www.toshiba.kr/front/app/social.php"
-							class="introduce_left"
-						>
+						<a href="#" class="introduce_left">
 							<img
 								src="http://www.toshiba.kr/front/images/main/main_menu1.jpg"
 								alt=""
@@ -137,12 +200,15 @@
 									지역사회에 이바지하고 있습니다.
 								</p>
 							</div>
+							<div class="introduce_bg"></div>
 						</a>
+						<img
+							src="http://www.toshiba.kr/front/images/main/main_menu1_m.jpg"
+							alt=""
+							class="introduce_left_img"
+						/>
 						<div class="introduce_right">
-							<a
-								href="https://www.global.toshiba/ww/outline/corporate/history.html"
-								class="introduce_right_bannerbox"
-							>
+							<a href="#" class="introduce_right_bannerbox">
 								<img
 									src="http://www.toshiba.kr/front/images/main/main_menu2.jpg"
 									alt=""
@@ -153,24 +219,20 @@
 									alt="연혁"
 									class="introduce_text_img"
 								/>
+								<div class="introduce_bg"></div>
 							</a>
-							<a
-								href="http://www.toshiba.kr/front/app/domestic_industry.php"
-								class="introduce_right_bannerbox"
+							<a href="#" class="introduce_right_bannerbox"
 								><img
 									src="http://www.toshiba.kr/front/images/main/main_menu3.jpg"
 									alt=""
-									class="introduce_right_img"
-								/>
+									class="introduce_right_img" />
 								<div class="introduce_right_textbox">
 									<strong>국내법인</strong>
 									<p>한국 내 도시바를 소개합니다.</p>
-								</div></a
-							>
-							<a
-								href="http://www.toshiba.kr/front/app/newdoshiba.php"
-								class="introduce_right_bannerbox"
-							>
+								</div>
+								<div class="introduce_bg"></div
+							></a>
+							<a href="#" class="introduce_right_bannerbox">
 								<img
 									src="http://www.toshiba.kr/front/images/main/main_menu4.jpg"
 									alt=""
@@ -180,10 +242,9 @@
 									<strong>한국 내 도시바를 소개합니다.</strong>
 									<p>새로운 도시바의 사업체계가 시작됩니다.</p>
 								</div>
+								<div class="introduce_bg"></div>
 							</a>
-							<a
-								href="http://www.toshiba.kr/front/app/global.php"
-								class="introduce_right_bannerbox"
+							<a href="#" class="introduce_right_bannerbox"
 								><img
 									src="http://www.toshiba.kr/front/images/main/main_menu5.jpg"
 									alt=""
@@ -193,23 +254,38 @@
 									<strong>사업분야</strong>
 									<p>도시바의 사업과 제품, 서비스를 소개합니다.</p>
 								</div>
+								<div class="introduce_bg"></div>
 							</a>
+						</div>
+						<div class="introduce_right_imgbox">
+							<a href="#">
+								<img
+									src="http://www.toshiba.kr/front/images/main/main_menu2_m.jpg"
+									alt=""
+							/></a>
+							<a href="#"
+								><img
+									src="http://www.toshiba.kr/front/images/main/main_menu3_m.jpg"
+									alt=""
+							/></a>
+							<a href="#"
+								><img
+									src="http://www.toshiba.kr/front/images/main/main_menu4_m.jpg"
+									alt=""
+							/></a>
+							<a href="#"
+								><img
+									src="http://www.toshiba.kr/front/images/main/main_menu5_m.jpg"
+									alt=""
+							/></a>
 						</div>
 					</div>
 				</div>
-				<!--introduce-wrap-->
 				<div class="info_banner_wrap">
 					<div class="info_banner">
 						<ul>
 							<li>
-								<a
-									href="http://www.toshiba.co.jp/about/ir/index.htm"
-									target="_blank"
-								>
-									<!-- <img
-										src="http://www.toshiba.kr/front/images/main/icon_main_menu1.png"
-										alt=""
-									/> -->
+								<a href="#">
 									<div class="info_banner_textbox">
 										<span>INVESTIMENT INFORMATION</span>
 										<p>도시바 투자 정보</p>
@@ -217,25 +293,15 @@
 								</a>
 							</li>
 							<li>
-								<a
-									href="http://www.toshiba.kr/upload_file/corporateprofile_e.pdf"
-									target="_blank"
+								<a href="#"
 									><div class="info_banner_textbox">
 										<span>CORPORATE PROFILE TOSHIBA TODAY</span>
 										<p>회사소개서 다운로드</p>
 									</div>
-									<!-- <img
-										src="http://www.toshiba.kr/front/images/main/icon_main_menu2.png"
-										alt=""
-									/> -->
 								</a>
 							</li>
 							<li>
-								<a
-									href="http://tsds.kr/"
-									target="_blank"
-									class="info_last_banner"
-								>
+								<a href="#" class="info_last_banner">
 									<div class="info_banner_textbox">
 										<span>TOSHIBA 고객센터</span>
 										<p>외장하드 &amp; 스토리지 고객센터</p>
@@ -306,31 +372,31 @@
 			<footer>
 				<div class="footer_wrap">
 					<div class="footer_info_box">
-						<p>
-							COPYRIGHT ® 2019 TOSHIBA ELECTRONICS KOREA CORP. TOSHIBA TEC KOREA
-							CO., LTD ALLRIGHTS RESERVED.
-						</p>
-						<span class="footer_info_line"></span>
-						<a href="">Sitemap</a>
+						<span class="copyright"
+							>COPYRIGHT ® 2019 TOSHIBA ELECTRONICS KOREA CORP.<br />
+							TOSHIBA TEC KOREA CO., LTD ALLRIGHTS RESERVED.</span
+						>
+						<a href="#" class="sitemap">Sitemap</a>
 					</div>
 					<div class="layer_box">
 						<div class="personal_information_btn">
 							<a href="#">개인정보 취급방침</a>
 						</div>
 						<div class="option_val">
+							<span class="option_tit">FAMILY SITE</span>
+							<i class="select_btn"></i>
 							<select name="FAMILY SITE" id="family_site">
-								<option value="">FAMILY SITE</option>
-								<option value=""><a href="#">반도체 &amp; 스토리지</a></option>
-								<option value="">POS &amp; 바코드</option>
-								<option value="">외장하드</option>
+								<option>FAMILY SITE</option>
+								<option value="#">
+									<a href="#">반도체 &amp; 스토리지</a>
+								</option>
+								<option value="#">
+									<a href="#">POS &amp; 바코드</a>
+								</option>
+								<option value="#">
+									<a href="#">외장하드</a>
+								</option>
 							</select>
-							<!-- FAMILY SITE -->
-							<!-- <ul>
-								<li><a href="#"></a></li>
-								<li><a href="#">반도체 &amp; 스토리지</a></li>
-								<li><a href="#">POS &amp; 바코드</a></li>
-								<li><a href="#">외장하드</a></li>
-							</ul> -->
 						</div>
 					</div>
 				</div>
