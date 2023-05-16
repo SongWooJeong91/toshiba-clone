@@ -37,6 +37,15 @@ header {
 }
 .menu_btn {
 	display: none;
+	position: absolute;
+	left: 10px;
+	top: 16px;
+	width: 26px;
+	height: 20px;
+	background: url('../images/m-menu-btn.png');
+	background-size: 100% auto;
+	border: 1px solid red;
+	overflow: hidden;
 }
 .main_menu {
 	display: flex;
@@ -406,14 +415,6 @@ header {
 	}
 	.menu_btn {
 		display: block;
-		position: absolute;
-		left: 10px;
-		top: 16px;
-		width: 26px;
-		height: 20px;
-		background: url('../images/m-menu-btn.png');
-		background-size: 100% auto;
-		overflow: hidden;
 	}
 	.m_menu_wrap {
 		display: block;
